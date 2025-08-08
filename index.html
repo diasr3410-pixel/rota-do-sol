@@ -10,113 +10,85 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f5f0;
-      color: #333;
+      background: linear-gradient(135deg, #e0f7fa, #fffde7);
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
-
     .card {
-      background: white;
-      padding: 2rem;
+      background: #ffffff;
       border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      max-width: 380px;
-      width: 100%;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       text-align: center;
+      width: 100%;
+      max-width: 380px;
     }
-
     .logo {
-      max-width: 180px;
+      width: 160px;
       margin-bottom: 1rem;
     }
-
     h1 {
-      font-size: 1.8rem;
       margin: 0.5rem 0;
+      font-size: 1.8rem;
       color: #0c2c52;
     }
-
     .subtitle {
-      font-size: 1rem;
-      font-weight: 500;
-      color: #666;
-      margin-bottom: 2rem;
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
     }
-
-    .button {
+    .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 14px 20px;
-      border: none;
-      border-radius: 10px;
+      gap: 8px;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 12px;
       font-size: 1rem;
       font-weight: bold;
+      color: #fff;
       text-decoration: none;
-      color: white;
-      transition: background 0.3s ease, transform 0.2s;
-      margin: 10px 0;
+      transition: background 0.3s, transform 0.2s;
     }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .whatsapp { background-color: #25D366; }
-    .whatsapp:hover { background-color: #1DA851; }
-
-    .email { background-color: #0c2c52; }
-    .email:hover { background-color: #091f36; }
-
+    .btn:hover { transform: translateY(-2px); }
+    .whatsapp { background: #25D366; }
+    .email    { background: #0c2c52; }
     .instagram {
-      background-color: #C13584;
-      opacity: 0.5;
-      cursor: not-allowed;
+      background: #C13584;
+      opacity: 0.6;
+      cursor: default;
     }
-
-    .footer {
-      margin-top: 2rem;
+    .btn svg, .btn i { font-size: 1.2rem; }
+    footer {
+      margin-top: 1.5rem;
       font-size: 0.75rem;
       color: #aaa;
-    }
-
-    @media (max-width: 480px) {
-      h1 { font-size: 1.5rem; }
-      .subtitle { font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
-
   <div class="card">
-    <!-- Logo -->
-   <img class="logo" src="logo-rotadosol.png" alt="Logo Rota do Sol" />
-
-    <!-- Nome -->
+    <img src="logo-rotadosol.png" alt="Logo Rota do Sol Turismo" class="logo"/>
     <h1>Rota do Sol Turismo</h1>
-
-    <!-- Slogan -->
-    <div class="subtitle">Conforto, Segurança e Qualidade em Cada Rota.<br>Sua Jornada ao Sol Começa Aqui.</div>
-
-    <!-- Botões com ícones -->
-    <a href="https://wa.me/5573998621807" class="button whatsapp" target="_blank">
+    <div class="subtitle">
+      Conforto, Segurança e Qualidade em Cada Rota.<br>
+      Sua Jornada ao Sol Começa Aqui.
+    </div>
+    <a href="https://wa.me/5573998621807" class="btn whatsapp" target="_blank">
       <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
-    <a href="mailto:rotadosolturismo@outlook.com.br" class="button email">
+    <a href="mailto:rotadosolturismo@outlook.com.br" class="btn email">
       <i class="fas fa-envelope"></i> E-mail
     </a>
-    <div class="button instagram">
+    <div class="btn instagram">
       <i class="fab fa-instagram"></i> Instagram (em breve)
     </div>
-
-    <div class="footer">© 2025 Rota do Sol Turismo</div>
+    <footer>© 2025 Rota do Sol Turismo</footer>
   </div>
-
 </body>
 </html>
 
