@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rota do Sol Turismo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
@@ -18,18 +19,18 @@
     }
 
     .card {
-      background: #fff;
-      border-radius: 20px;
+      background: white;
       padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 380px;
       width: 100%;
+      text-align: center;
     }
 
     .logo {
-      max-width: 200px;
-      margin-bottom: 1.2rem;
+      max-width: 180px;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -49,8 +50,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 10px;
       width: 100%;
-      margin: 10px 0;
       padding: 14px 20px;
       border: none;
       border-radius: 10px;
@@ -58,31 +59,19 @@
       font-weight: bold;
       text-decoration: none;
       color: white;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s;
+      margin: 10px 0;
     }
 
-    .button svg {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      fill: white;
+    .button:hover {
+      transform: translateY(-2px);
     }
 
-    .whatsapp {
-      background-color: #25D366;
-    }
+    .whatsapp { background-color: #25D366; }
+    .whatsapp:hover { background-color: #1DA851; }
 
-    .whatsapp:hover {
-      background-color: #1DA851;
-    }
-
-    .email {
-      background-color: #0c2c52;
-    }
-
-    .email:hover {
-      background-color: #091f36;
-    }
+    .email { background-color: #0c2c52; }
+    .email:hover { background-color: #091f36; }
 
     .instagram {
       background-color: #C13584;
@@ -97,26 +86,17 @@
     }
 
     @media (max-width: 480px) {
-      .card {
-        border-radius: 10px;
-        padding: 1.5rem;
-      }
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .subtitle {
-        font-size: 0.9rem;
-      }
+      h1 { font-size: 1.5rem; }
+      .subtitle { font-size: 0.9rem; }
     }
   </style>
 </head>
 <body>
+
   <div class="card">
     <!-- Logo -->
-       <img class="logo" src="logo-rotadosol.png" alt="Logo Rota do Sol" />
-  
+   <img class="logo" src="logo-rotadosol.png" alt="Logo Rota do Sol" />
+
     <!-- Nome -->
     <h1>Rota do Sol Turismo</h1>
 
@@ -125,23 +105,20 @@
 
     <!-- Botões com ícones -->
     <a href="https://wa.me/5573998621807" class="button whatsapp" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.003 3c-7.18 0-13 5.82-13 13 0 2.29.605 4.538 1.75 6.512L3 29l6.688-1.712C11.661 28.39 13.91 29 16.003 29c7.18 0 13-5.82 13-13s-5.82-13-13-13zm.034 2c6.065 0 11 4.935 11 11s-4.935 11-11 11c-1.86 0-3.703-.49-5.317-1.414l-.384-.223-3.965 1.015 1.052-3.924-.25-.402C6.202 20.18 5.7 18.601 5.7 16.993c0-6.065 4.935-11 11-11zm-2.26 5c-.23 0-.461.011-.692.034-.417.042-.83.282-.99.692-.225.579-.683 1.843.698 3.787 1.165 1.727 3.087 3.355 5.6 4.25 1.75.614 2.378.5 2.96-.198.395-.474.765-.935.6-1.593-.12-.49-.87-.752-1.59-1.042-.717-.29-1.646-.747-1.87-1.026-.2-.25-.165-.38-.092-.624.067-.222.3-.696.442-.934.146-.238.09-.447-.025-.625-.116-.178-.667-1.608-.915-2.173-.25-.563-.51-.658-.74-.67-.203-.01-.411-.015-.617-.015z"/></svg>
-      WhatsApp
+      <i class="fab fa-whatsapp"></i> WhatsApp
     </a>
-
     <a href="mailto:rotadosolturismo@outlook.com.br" class="button email">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.103 0 2 .897 2 2v12c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V6c0-1.103.897-2 2-2zm8 7.414L5.707 6.707 4.293 8.121 12 15.828l7.707-7.707-1.414-1.414L12 11.414z"/></svg>
-      E-mail
+      <i class="fas fa-envelope"></i> E-mail
     </a>
-
     <div class="button instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.25 2.425.418a4.924 4.924 0 0 1 1.691 1.09 4.924 4.924 0 0 1 1.09 1.69c.168.457.362 1.256.418 2.426.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.25 1.97-.418 2.426a4.926 4.926 0 0 1-1.09 1.691 4.926 4.926 0 0 1-1.691 1.09c-.457.168-1.256.362-2.426.418-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.25-2.426-.418a4.926 4.926 0 0 1-1.691-1.09 4.926 4.926 0 0 1-1.09-1.691c-.168-.457-.362-1.256-.418-2.426C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.25-1.97.418-2.426a4.924 4.924 0 0 1 1.09-1.691 4.924 4.924 0 0 1 1.691-1.09c.457-.168 1.256-.362 2.426-.418C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.015 7.052.072 5.774.128 4.729.304 3.9.625a7.07 7.07 0 0 0-2.58 1.631A7.07 7.07 0 0 0 .625 4.9C.304 5.729.128 6.774.072 8.052.015 9.332 0 9.741 0 12s.015 2.668.072 3.948c.056 1.278.232 2.323.553 3.152a7.072 7.072 0 0 0 1.631 2.58 7.072 7.072 0 0 0 2.58 1.631c.829.321 1.874.497 3.152.553C9.332 23.985 9.741 24 12 24s2.668-.015 3.948-.072c1.278-.056 2.323-.232 3.152-.553a7.072 7.072 0 0 0 2.58-1.631 7.072 7.072 0 0 0 1.631-2.58c.321-.829.497-1.874.553-3.152.057-1.28.072-1.689.072-3.948s-.015-2.668-.072-3.948c-.056-1.278-.232-2.323-.553-3.152a7.07 7.07 0 0 0-1.631-2.58 7.07 7.07 0 0 0-2.58-1.631C17.323.304 16.278.128 15 .072 13.72.015 13.332 0 12 0z"/></svg>
-      Instagram (em breve)
+      <i class="fab fa-instagram"></i> Instagram (em breve)
     </div>
 
     <div class="footer">© 2025 Rota do Sol Turismo</div>
   </div>
+
 </body>
 </html>
+
 
 <img class="logo" src="logo-rotadosol.png" alt="Logo Rota do Sol" />
